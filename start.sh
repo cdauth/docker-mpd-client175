@@ -32,6 +32,8 @@ if [[ "$OLD_AUDIO_GID" != "$AUDIO_GID" ]]; then
 	sed -ri "s@^(([^:]+:){3})$OLD_AUDIO_GID(:.*)\$@\1$AUDIO_GID\3@" /etc/passwd
 fi
 
+[ ! -e /var/lib/mpd/playlists ] && mkdir /var/lib/mpd/playlists
+
 trap 'finish;exit' INT TERM
 
 (

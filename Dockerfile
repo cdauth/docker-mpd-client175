@@ -21,6 +21,6 @@ RUN apt-get --purge autoremove -y subversion
 
 EXPOSE 8080 6600
 
-VOLUME [ "/music" ]
+VOLUME [ "/music", "/var/lib/mpd" ]
         
 CMD [ "/bin/bash", "/usr/local/bin/start.sh" ]

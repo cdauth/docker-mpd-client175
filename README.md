@@ -25,6 +25,7 @@ Volumes
 =======
 
 * `/music`: The directory containing your music
+* `/var/lib/mpd`: MPD database. Use this to persist your playlists.
 
 
 Ports
