@@ -12,7 +12,7 @@ start_client175() {
 }
 
 stop_mpd() {
-	kill "$(cat "$MPD_PID_FILE")"
+	mpd --kill
 }
 
 stop_client175() {
